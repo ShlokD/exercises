@@ -26,6 +26,7 @@ describe('sort', function() {
     nativeSortCalled = false;
     sorted = sort(arr);
     var lastNumber = sorted[0];
+    
     for (i = 1; i < 10000; i++) {
       if (lastNumber > sorted[i]) {
         throw new Error("array isn't sorted");
